@@ -54,9 +54,3 @@ bindkey '^Xl' list-choices
 local knownhosts
 knownhosts=( ${${${${(f)"$(<$HOME/.ssh/known_hosts)"}:#[0-9]*}%%\ *}%%,*} )
 zstyle ':completion:*:(ssh|scp|sftp):*' hosts $knownhosts
-
-if [[ -x /usr/lib/command-not-found ]] ; then
-	function command_not_found_handler() {
-		/usr/lib/command-not-found --no-failure-msg -- $1
-	}
-fi

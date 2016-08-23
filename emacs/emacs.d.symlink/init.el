@@ -6,9 +6,9 @@
 
 (setq  make-backup-files nil)
 (fset 'yes-or-no-p 'y-or-n-p)
-(show-parent-mode 1)
+(show-paren-mode 1)
 
-#customize calendar
+;customize calendar
 (setq calendar-week-start-day 1
       calendar-intermonth-text
       '(propertize

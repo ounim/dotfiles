@@ -17,3 +17,23 @@
                  (calendar-iso-from-absolute
                   (calendar-absolute-from-gregorian (list month day year)))))
         'font-lock-face 'font-lock-function-name-face))
+
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
+(add-to-list 'package-archives
+	     '("marmalade" . "https://marmalade-repo.org/packages/") t)
+
+(package-initialize)
+
+(add-to-list 'load-path (expand-file-name "site-lisp/use-package" user-emacs-directory))
+
+(require 'use-package)
+
+(use-package color-theme
+  :ensure t)
+(use-package color-theme-zenburn
+  :ensure t
+  :config
+  (color-theme-zenburn))
+

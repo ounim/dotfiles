@@ -26,6 +26,7 @@
 
 (package-initialize)
 
+(add-to-list 'load-path (expand-file-name "site-lisp" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "site-lisp/use-package" user-emacs-directory))
 
 (require 'use-package)
@@ -37,3 +38,4 @@
   :config
   (color-theme-zenburn))
 
+(require 'amadeus)

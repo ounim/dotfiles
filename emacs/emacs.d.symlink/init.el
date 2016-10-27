@@ -39,3 +39,4 @@
   (color-theme-zenburn))
 
 (require 'amadeus)
+(put 'narrow-to-region 'disabled nil)

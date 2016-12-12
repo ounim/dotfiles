@@ -36,9 +36,14 @@
   :init
   (load-theme 'zenburn t))
 
-(require 'amadeus)
-(put 'narrow-to-region 'disabled nil)
+(if (version< "24.4" emacs-version)
+    (use-package magit
+      :ensure t))
 
+(require 'amadeus)
+
+(put 'narrow-to-region 'disabled nil)
+(put 'scroll-left 'disabled nil)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

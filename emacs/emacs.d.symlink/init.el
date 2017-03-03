@@ -40,6 +40,12 @@
     (use-package magit
       :ensure t))
 
+(use-package go-mode
+  :ensure t)
+
+(use-package markdown-mode
+  :ensure t)
+
 (require 'amadeus)
 
 (put 'narrow-to-region 'disabled nil)
@@ -56,3 +62,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'set-goal-column 'disabled nil)

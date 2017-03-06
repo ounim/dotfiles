@@ -3,4 +3,4 @@ git/gitconfig.local.symlink
 emacs/emacs.d.symlink/elpa/
 emacs/emacs.d.symlink/session.*
 emacs/emacs.d.symlink/tramp
-
+emacs/emacs.d.symlink/url

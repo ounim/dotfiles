@@ -40,7 +40,13 @@
     (use-package magit
       :ensure t))
 
+
 (use-package flycheck
+
+(use-package go-mode
+  :ensure t)
+
+(use-package markdown-mode
   :ensure t)
 
 (require 'amadeus)
@@ -59,3 +65,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'set-goal-column 'disabled nil)

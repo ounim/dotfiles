@@ -3,7 +3,7 @@
 (scroll-bar-mode -1)
 
 (ido-mode 1)
-
+(setq mouse-yank-at-point t)
 (setq  make-backup-files nil)
 (fset 'yes-or-no-p 'y-or-n-p)
 (show-paren-mode 1)
@@ -40,6 +40,9 @@
     (use-package magit
       :ensure t))
 
+(use-package flycheck
+  :ensure t)
+
 (require 'amadeus)
 
 (put 'narrow-to-region 'disabled nil)
@@ -49,7 +52,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (zenburn-theme color-theme-zenburn))))
+ '(package-selected-packages (quote (flycheck zenburn-theme color-theme-zenburn))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

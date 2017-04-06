@@ -42,6 +42,7 @@
 
 
 (use-package flycheck
+  :ensure t)
 
 (use-package go-mode
   :ensure t)

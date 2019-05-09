@@ -21,6 +21,9 @@
             (setq indent-tabs-mode nil)))
 
 
-(add-to-list 'tramp-remote-path "~/bin")
+(use-package tramp
+  :ensure t
+  :config
+  (add-to-list 'tramp-remote-path "~/bin"))
 
 (provide 'amadeus)

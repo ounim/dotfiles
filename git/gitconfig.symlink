@@ -2,3 +2,6 @@
 path = ~/.gitconfig.local
 [push]
 	default = simple
+[user]
+	name = Damien PROFETA
+	email = damien.profeta@amadeus.com

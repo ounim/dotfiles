@@ -26,4 +26,8 @@
   :config
   (add-to-list 'tramp-remote-path "~/bin"))
 
+
+(use-package groovy-mode
+  :ensure t)
+
 (provide 'amadeus)

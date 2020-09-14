@@ -36,3 +36,5 @@ do
 done
 
 unset config_files
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /home/dprofeta/Downloads/mc mc
